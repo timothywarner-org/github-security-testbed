@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>3.5.6</version>
+    <version>3.5.8</version>
   </parent>
 
   <groupId>org.owasp.webgoat</groupId>
@@ -62,25 +62,25 @@
 
   <properties>
     <!-- Shared properties with plugins and version numbers across submodules-->
-    <asciidoctorj.version>3.0.0</asciidoctorj.version>
-    <bootstrap.version>5.3.5</bootstrap.version>
+    <asciidoctorj.version>3.0.1</asciidoctorj.version>
+    <bootstrap.version>5.3.8</bootstrap.version>
     <cglib.version>3.3.0</cglib.version>
     <!-- do not update necessary for lesson -->
     <checkstyle.version>3.6.0</checkstyle.version>
     <commons-collections.version>3.2.1</commons-collections.version>
     <commons-compress.version>1.28.0</commons-compress.version>
-    <commons-io.version>2.20.0</commons-io.version>
+    <commons-io.version>2.21.0</commons-io.version>
     <commons-lang3.version>3.14.0</commons-lang3.version>
     <commons-text.version>1.14.0</commons-text.version>
     <guava.version>33.5.0-jre</guava.version>
     <jacoco.version>0.8.11</jacoco.version>
     <java.version>25</java.version>
     <jaxb.version>2.3.1</jaxb.version>
-    <jjwt.version>0.9.1</jjwt.version>
-    <jose4j.version>0.9.3</jose4j.version>
+    <jjwt.version>0.13.0</jjwt.version>
+    <jose4j.version>0.9.6</jose4j.version>
     <jquery.version>3.7.1</jquery.version>
-    <jsoup.version>1.19.1</jsoup.version>
-    <maven-compiler-plugin.version>3.14.0</maven-compiler-plugin.version>
+    <jsoup.version>1.21.2</jsoup.version>
+    <maven-compiler-plugin.version>3.14.1</maven-compiler-plugin.version>
     <maven-failsafe-plugin.version>3.5.2</maven-failsafe-plugin.version>
     <maven-jar-plugin.version>3.1.2</maven-jar-plugin.version>
     <maven-javadoc-plugin.version>3.1.1</maven-javadoc-plugin.version>
@@ -96,16 +96,16 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <thymeleaf.version>3.1.2.RELEASE</thymeleaf.version>
     <waittimeForServerStart>60</waittimeForServerStart>
-    <webdriver.version>6.3.2</webdriver.version>
+    <webdriver.version>6.3.3</webdriver.version>
     <webgoat.context>/WebGoat</webgoat.context>
     <webgoat.port>8080</webgoat.port>
     <webgoat.sslenabled>false</webgoat.sslenabled>
     <webjars-locator-core.version>0.59</webjars-locator-core.version>
     <webwolf.context>/WebWolf</webwolf.context>
     <webwolf.port>9090</webwolf.port>
-    <wiremock.version>3.13.1</wiremock.version>
+    <wiremock.version>3.13.2</wiremock.version>
     <xml-resolver.version>1.2</xml-resolver.version>
-    <xstream.version>1.4.5</xstream.version>
+    <xstream.version>1.4.21</xstream.version>
     <!-- do not update necessary for lesson -->
     <zxcvbn.version>1.9.0</zxcvbn.version>
   </properties>
@@ -115,7 +115,7 @@
       <dependency>
         <groupId>org.apache.commons</groupId>
         <artifactId>commons-exec</artifactId>
-        <version>1.5.0</version>
+        <version>1.6.0</version>
       </dependency>
       <dependency>
         <groupId>org.asciidoctor</groupId>
@@ -217,12 +217,12 @@
       <dependency>
         <groupId>org.jruby</groupId>
         <artifactId>jruby</artifactId>
-        <version>10.0.0.1</version>
+        <version>10.0.2.0</version>
       </dependency>
       <dependency>
         <groupId>com.microsoft.playwright</groupId>
         <artifactId>playwright</artifactId>
-        <version>1.55.0</version>
+        <version>1.57.0</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -537,7 +537,7 @@
       <plugin>
         <groupId>com.diffplug.spotless</groupId>
         <artifactId>spotless-maven-plugin</artifactId>
-        <version>2.44.4</version>
+        <version>2.46.1</version>
         <configuration>
           <formats>
             <format>
@@ -607,7 +607,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
-        <version>3.6.1</version>
+        <version>3.6.2</version>
         <executions>
           <execution>
             <id>restrict-log4j-versions</id>
