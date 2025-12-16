@@ -20,7 +20,7 @@ pytest-timeout==2.2.0
 mypy==1.7.1
 
 # Code formatting (optional)
-black==23.11.0
+black==24.3.0
 flake8==6.1.0
 
 # Security linting (optional)
