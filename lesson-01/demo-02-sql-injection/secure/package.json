@@ -1,0 +1,25 @@
+{
+  "name": "sql-injection-demo-secure",
+  "version": "2.0.0",
+  "description": "SQL Injection Secure API - Demonstrating security best practices",
+  "main": "api.js",
+  "scripts": {
+    "start": "node api.js",
+    "start:enhanced": "node api-enhanced.js"
+  },
+  "keywords": ["security", "sql-injection", "secure", "owasp"],
+  "author": "Timothy Warner",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "express": "^4.18.2",
+    "express-rate-limit": "^7.1.0",
+    "express-validator": "^7.0.1",
+    "helmet": "^7.1.0",
+    "mysql2": "^3.6.0"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
