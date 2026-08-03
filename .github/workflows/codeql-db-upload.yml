@@ -8,18 +8,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout juice-shop codebase
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
         with:
           path: juice-shop
 
       - name: Initialize CodeQL
-        uses: github/codeql-action/init@v3
+        uses: github/codeql-action/init@v4
         with:
           languages: javascript-typescript
           source-root: juice-shop
 
       - name: Perform CodeQL Analysis
-        uses: github/codeql-action/analyze@v3
+        uses: github/codeql-action/analyze@v4
         with:
           category: "/language:javascript-typescript"
 
@@ -29,7 +29,7 @@ jobs:
           cp -r $RUNNER_TEMP/codeql_databases/javascript codeql-db
 
       - name: Upload CodeQL database artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: codeql-db
           path: codeql-db
