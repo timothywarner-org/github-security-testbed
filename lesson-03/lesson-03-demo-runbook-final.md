@@ -14,19 +14,17 @@ This lesson demonstrates using GitHub Copilot and GitHub Advanced Security (GHAS
 
 ## ⚠️ Pre-Demo Checklist
 
-**24 Hours Before Recording:**
+**A day before you start:**
 - [ ] Test all 4 demo flows end-to-end
 - [ ] Verify Copilot authentication and quota
 - [ ] Backup screenshots of expected Copilot outputs
-- [ ] Clone course repository: `git clone https://github.com/techtrainertim/copilot-security-demos`
+- [ ] Clone course repository: `git clone https://github.com/timothywarner-org/github-security-testbed`
 
-**1 Hour Before Recording:**
+**Right before you start:**
 - [ ] Start demo environment services
 - [ ] Open VS Code with demo workspace
 - [ ] Clear terminal history for clean recording
 - [ ] Verify GitHub Copilot extension active
-- [ ] Test screen recording and audio
-
 **Immediately Before:**
 - [ ] Close distracting apps (Slack, email)
 - [ ] Disable all notifications
@@ -40,7 +38,7 @@ This lesson demonstrates using GitHub Copilot and GitHub Advanced Security (GHAS
 
 ### Pre-Demo Setup (1 min)
 ```bash
-cd ~/copilot-security-demos/lesson-03/demo-01-oauth-tests
+cd github-security-testbed/lesson-03/demo-01-oauth-tests
 ls -la  # Show auth_server.py OAuth implementation
 code auth_server.py  # Open in VS Code
 ```
@@ -140,7 +138,7 @@ Navigate to GitHub → Actions → Show CodeQL scanning test code
 
 ### Pre-Demo Setup (1 min)
 ```bash
-cd ~/copilot-security-demos/lesson-03/demo-02-fuzzing
+cd github-security-testbed/lesson-03/demo-02-fuzzing
 ls -la  # Show api_validator.c JSON parser
 code api_validator.c  # Open in VS Code
 ```
@@ -244,7 +242,7 @@ Create GitHub Actions workflow that runs this libFuzzer harness for 6 hours nigh
 
 ### Pre-Demo Setup (1 min)
 ```bash
-cd ~/copilot-security-demos/lesson-03/demo-03-sast-dast
+cd github-security-testbed/lesson-03/demo-03-sast-dast
 ls -la  # Show Node.js application
 code src/api/search.js  # Open vulnerable code
 ```
@@ -351,7 +349,7 @@ const results = await db.query(sql, [`%${searchQuery}%`]);
 
 ### Pre-Demo Setup (1 min)
 ```bash
-cd ~/copilot-security-demos/lesson-03/demo-04-cicd-pipeline
+cd github-security-testbed/lesson-03/demo-04-cicd-pipeline
 code .  # Open deployment pipeline workspace
 ```
 
@@ -513,7 +511,7 @@ Deployment:
 
 ## 🎓 Student Resources
 
-**Course Repository:** timw.info/copilot-security
+**Course repository:** [github-copilot-cybersecurity-professionals](https://github.com/timothywarner-org/github-copilot-cybersecurity-professionals)
 - All demonstration code
 - Security test templates
 - Fuzzing harness examples

@@ -3,7 +3,7 @@
 **Course:** GitHub Copilot for Cybersecurity Specialists  
 **Lesson:** 4 of 5  
 **Duration:** 40 minutes  
-**Repository:** timw.info/copilot-security
+**Demo code:** [timothywarner-org/github-security-testbed](https://github.com/timothywarner-org/github-security-testbed)
 
 ---
 
@@ -46,8 +46,8 @@ az --version
 ### Test Repository Setup
 ```bash
 # Clone the demo repository
-git clone https://github.com/techtrainertim/copilot-security-demos
-cd copilot-security-demos/lesson-04
+git clone https://github.com/timothywarner-org/github-security-testbed
+cd github-security-testbed/lesson-04
 
 # Install dependencies
 npm install
@@ -223,7 +223,7 @@ npm install @octokit/rest dotenv
 cat > .env << 'EOF'
 GITHUB_TOKEN=your_github_token
 REPO_OWNER=your_github_username
-REPO_NAME=copilot-security-demos
+REPO_NAME=github-security-testbed
 EOF
 
 # Verify GHAS data is available
@@ -298,7 +298,7 @@ Format as markdown table with columns: Finding | OWASP Category | CWE | Severity
 ```markdown
 # OWASP Top 10 Compliance Report
 **Generated:** 2024-11-16
-**Repository:** copilot-security-demos
+**Repository:** github-security-testbed
 
 | Finding | OWASP Category | CWE | Severity | Status |
 |---------|----------------|-----|----------|--------|
@@ -674,7 +674,7 @@ gh pr create --title "Test security linter" --body "Testing custom Semgrep rule"
 
 ```bash
 # Navigate to demo app with known vulnerable dependencies
-cd demos/vulnerable-app
+cd ../vulnerable_repos/NodeGoat
 
 # Install dependencies (includes vulnerable packages)
 npm install
@@ -682,7 +682,7 @@ npm install
 # Run Dependabot scan
 gh api repos/OWNER/REPO/dependabot/alerts > dependabot-alerts.json
 
-# You should see alerts for lodash, axios, express, etc.
+# You should see alerts for NodeGoat's outdated packages, such as marked and express.
 ```
 
 ### Demo Script
@@ -1048,7 +1048,7 @@ jobs:
 
 ## 🎓 Resources
 
-**Course Repository:** timw.info/copilot-security
+**Course repository:** [github-copilot-cybersecurity-professionals](https://github.com/timothywarner-org/github-copilot-cybersecurity-professionals)
 - Security review templates
 - Threat modeling frameworks
 - Audit automation scripts

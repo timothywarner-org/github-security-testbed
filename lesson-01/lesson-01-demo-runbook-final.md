@@ -5,7 +5,7 @@
 **Lesson:** 01 - Vulnerability Detection with GitHub Copilot
 **Total Demo Runtime:** 40 minutes
 **Execution Context:** VS Code + GitHub Copilot + Node.js/React environments
-**Repository:** timw.info/copilot-security
+**Demo code:** [timothywarner-org/github-security-testbed](https://github.com/timothywarner-org/github-security-testbed)
 
 ---
 
@@ -21,7 +21,8 @@
 
 **Repository Structure:**
 ```bash
-cd ~/copilot-security-demos/lesson-01
+git clone https://github.com/timothywarner-org/github-security-testbed
+cd github-security-testbed/lesson-01
 ls -la
 
 # Expected structure:
@@ -57,7 +58,6 @@ lesson-01/
 - [ ] Node.js version verified (`node --version`)
 - [ ] All vulnerable sample apps tested locally
 - [ ] Browser DevTools ready for XSS demo
-- [ ] Terminal positioned for visibility during recording
 - [ ] Copilot Chat panel open but minimized
 
 ---
@@ -767,7 +767,7 @@ Output as JSON for developer consumption.
 - Custom scanner implementations
 
 **Course Repository Integration:**
-All demo code available at: timw.info/copilot-security/lesson-01
+All demo code is in [github-security-testbed/lesson-01](https://github.com/timothywarner-org/github-security-testbed/tree/main/lesson-01).
 
 ---
 
@@ -812,10 +812,9 @@ All demo code available at: timw.info/copilot-security/lesson-01
 - [ ] Start all necessary services (databases, APIs)
 - [ ] Open VS Code with proper workspace
 - [ ] Clear terminal history (clean slate for recording)
-- [ ] Test screen recording setup
 - [ ] Verify audio levels
 
-**Immediately Before Recording:**
+**Right before you start:**
 - [ ] Close distracting apps (Slack, email, etc.)
 - [ ] Disable notifications
 - [ ] Set Copilot to appropriate verbosity level

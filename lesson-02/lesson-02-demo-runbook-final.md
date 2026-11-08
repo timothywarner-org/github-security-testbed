@@ -5,7 +5,7 @@
 **Lesson:** 02 - Implement Security Protocols with Copilot
 **Total Demo Runtime:** 40 minutes
 **Execution Context:** VS Code + GitHub Copilot + GitHub Advanced Security + Azure
-**Repository:** timw.info/copilot-security/lesson-02
+**Demo code:** [github-security-testbed/lesson-02](https://github.com/timothywarner-org/github-security-testbed/tree/main/lesson-02)
 
 ---
 
@@ -32,12 +32,23 @@ This lesson teaches **how to use GitHub Copilot and GitHub Advanced Security to 
 
 **GitHub Repository Setup:**
 ```bash
-# Create repository with GHAS enabled
-gh repo create copilot-security-lesson-02 --private --enable-security-and-analysis
-
-# Clone and navigate
-git clone https://github.com/YOUR_ORG/copilot-security-lesson-02
+# Create your own practice repo and clone it. Public repositories can use
+# secret scanning, push protection, Dependabot, and code scanning for free.
+gh repo create copilot-security-lesson-02 --public --clone
 cd copilot-security-lesson-02
+
+# Bring in this lesson's demo code from the course testbed
+git clone --depth 1 https://github.com/timothywarner-org/github-security-testbed ../github-security-testbed
+cp -r ../github-security-testbed/lesson-02/. .
+git add . && git commit -m "Add Lesson 02 demo code" && git push -u origin HEAD
+
+# Turn on Dependabot alerts (this also turns on the dependency graph)
+gh api -X PUT repos/{owner}/{repo}/vulnerability-alerts
+
+# Turn on secret scanning and push protection
+gh api -X PATCH repos/{owner}/{repo} \
+  -f 'security_and_analysis[secret_scanning][status]=enabled' \
+  -f 'security_and_analysis[secret_scanning_push_protection][status]=enabled'
 ```
 
 **GHAS Configuration:**
@@ -476,13 +487,13 @@ Provide complete Istio YAML manifests.
 
 ## 🚀 Recording Tips
 
-**Before Recording:**
+**Before you start:**
 - Test all Copilot prompts (ensure they generate expected output)
 - Have pre-run GHAS scans ready (CodeQL takes time)
 - Pre-create Azure resources (Key Vault, VNet) if showing live
 - Have backup screenshots of successful generations
 
-**During Recording:**
+**While you work:**
 - Read Copilot prompts slowly (students will copy them)
 - Pause after generation to highlight security features
 - Explain WHY generated code is secure, not just WHAT it does
@@ -498,8 +509,8 @@ Provide complete Istio YAML manifests.
 
 ## 📚 Resources for Students
 
-**Course Repository:**
-timw.info/copilot-security/lesson-02
+**Demo code:**
+https://github.com/timothywarner-org/github-security-testbed/tree/main/lesson-02
 
 **Includes:**
 - All Copilot prompts from demos

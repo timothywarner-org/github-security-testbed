@@ -23,7 +23,7 @@ Keep each beat to ~3–4 minutes. This is the capstone, so focus on narrative mo
 
 ---
 
-## Pre-Requisites (Before Recording)
+## Prerequisites (Before You Start)
 
 - Repo cloned and opened in VS Code.
 - You’re logged into GitHub (`gh auth status`) and Azure (`az login`) in the integrated terminal.

@@ -17,7 +17,7 @@ Keep each beat to ~3–4 minutes. Don’t over-explain; let the tools speak.
 
 ---
 
-## Pre‑requisites (done before recording)
+## Prerequisites (do these first)
 
 - Repo cloned locally and opened in VS Code.  
 - Workspace file: `github-security-testbed.code-workspace`.  
@@ -124,7 +124,7 @@ chmod +x lesson-04/scripts/owasp-top10-alerts.sh
 lesson-04/scripts/owasp-top10-alerts.sh
 ```
 
-On camera, point out:
+Notice:
 
 - It’s the same data that shows up in the Security tab.  
 - The filter is purely on `rule.tags` containing “owasp”, which often map to OWASP Top 10 rules.  
@@ -136,11 +136,11 @@ On camera, point out:
 
 **Goal:** Show supply-chain visibility when dependencies change in a PR.
 
-Before recording, make sure you have a PR that changes dependencies, for example:
+Before you start, make sure you have a PR that changes dependencies, for example:
 
 - Modifies `package.json` / `package-lock.json` in one of the vulnerable apps.
 
-**On camera:**
+**Walkthrough:**
 
 1. In the browser, go to the `github-security-testbed` repo on GitHub.  
 2. Open your prepared PR (e.g., “Lesson 04 – dependency change demo”).  
@@ -170,7 +170,7 @@ Tie back to OWASP: vulnerable components / supply-chain risk.
    - The rule details, including tags (OWASP / CWE where available).  
    - The ability to mark as fixed, dismiss, or create issues.
 
-Optional closing line on camera:
+The takeaway:
 
 > “That’s the same data our `gh api` script pulled, just filtered differently. Copilot helps write the code, CodeQL finds issues, and Dependency review + Security tab give us supply-chain and code-level visibility in one place.”
 

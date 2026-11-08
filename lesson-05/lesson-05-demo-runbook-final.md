@@ -15,7 +15,7 @@ This lesson demonstrates using GitHub Copilot and infrastructure-as-code to auto
 
 ## ⚠️ Pre-Demo Checklist
 
-**24 Hours Before Recording:**
+**A day before you start:**
 - [ ] Test all 4 demo flows end-to-end
 - [ ] Verify Copilot authentication and quota
 - [ ] Clone TerraGoat: `git clone https://github.com/bridgecrewio/terragoat`
@@ -23,12 +23,11 @@ This lesson demonstrates using GitHub Copilot and infrastructure-as-code to auto
 - [ ] Test Python environment for compliance scripts
 - [ ] Backup screenshots of expected Copilot outputs
 
-**1 Hour Before Recording:**
+**Right before you start:**
 - [ ] Start demo environment services (Terraform, Python environments)
 - [ ] Open VS Code with demo workspace
 - [ ] Clear terminal history for clean recording
 - [ ] Verify GitHub Copilot extension active
-- [ ] Test screen recording and audio
 - [ ] Have Azure CLI authenticated (az login)
 
 **Immediately Before:**
@@ -44,7 +43,7 @@ This lesson demonstrates using GitHub Copilot and infrastructure-as-code to auto
 
 ### Pre-Demo Setup (1 min)
 ```bash
-cd ~/copilot-security-demos/lesson-05/demo-01-iac-templates
+cd github-security-testbed/lesson-05/demo-01-iac-templates
 ls -la  # Show TerraGoat Terraform files
 code .  # Open in VS Code
 ```
@@ -201,7 +200,7 @@ checkov -f main.tf --framework terraform --check CKV_AZURE_1,CKV_AZURE_3,CKV_AZU
 
 ### Pre-Demo Setup (1 min)
 ```bash
-cd ~/copilot-security-demos/lesson-05/demo-02-compliance-scripts
+cd github-security-testbed/lesson-05/demo-02-compliance-scripts
 ls -la  # Show existing Azure resources
 code .  # Open VS Code
 ```
@@ -372,7 +371,7 @@ jobs:
 
 ### Pre-Demo Setup (1 min)
 ```bash
-cd ~/copilot-security-demos/lesson-05/demo-03-stig-remediation
+cd github-security-testbed/lesson-05/demo-03-stig-remediation
 ls -la  # Show Windows Server with STIG scan results
 code .  # Open VS Code
 ```
@@ -595,7 +594,7 @@ Set-DscLocalConfigurationManager -Path .\LCMConfig -Force
 
 ### Pre-Demo Setup (1 min)
 ```bash
-cd ~/copilot-security-demos/lesson-05/demo-04-ir-playbooks
+cd github-security-testbed/lesson-05/demo-04-ir-playbooks
 ls -la  # Show existing IR scripts and Azure Log Analytics
 code .  # Open VS Code
 ```
@@ -960,8 +959,6 @@ You've demonstrated the complete compliance and incident response automation lif
 - [ ] Terminal positioned for visibility
 - [ ] VS Code theme set (dark recommended)
 - [ ] Notifications disabled
-- [ ] Screen recording tested (audio levels OK)
-
 ---
 
 ## 💪 Confidence Boosters
@@ -983,7 +980,7 @@ This is lesson 5 of 5. You've got this. **Go demonstrate security automation at 
 **Files Referenced:**
 - `copilot-cybersecurity-lesson-05-v2.pptx` (12 slides, 4,131 words)
 - `Lesson-05-Demo-Runbook-PROPER.md` (this file, 557 lines, 20 KB)
-- Repository: `https://github.com/techtrainertim/copilot-security-demos`
+- Repository: `https://github.com/timothywarner-org/github-security-testbed`
 
 ---
 

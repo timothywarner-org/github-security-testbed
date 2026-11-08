@@ -11,6 +11,8 @@
 
 > **Hands-on video training for security professionals leveraging GitHub Copilot to detect vulnerabilities, implement security protocols, automate testing, and ensure compliance.**
 
+> **Watching the Microsoft Press course?** This is the hands-on repo. Each `lesson-0N` folder holds that lesson's demo code, prompts, and runbook, so `lesson-01/demo-02-sql-injection/` is right where the course says it is. The slide PDFs and the full prompt library live in the companion repo, [github-copilot-cybersecurity-professionals](https://github.com/timothywarner-org/github-copilot-cybersecurity-professionals).
+
 ---
 
 ## About This Course

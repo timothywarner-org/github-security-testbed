@@ -14,7 +14,7 @@ Keep the story:
 
 ---
 
-## Pre-Demo Setup (Do Before Recording)
+## Pre-Demo Setup (Do This First)
 
 1. **Repo + Branch**
    - Push the `lesson-03` folder to a **private GHEC repo** with GHAS turned on.

@@ -34,7 +34,7 @@ We take security issues seriously, even in educational repositories. If you disc
 ### How to Report
 
 1. **Email**: security@timothywarner.org
-2. **GitHub Security Advisories**: Use the [Security tab](../../security/advisories) to create a private security advisory
+2. **GitHub Security Advisories**: Use the [Security tab](https://github.com/timothywarner-org/github-security-testbed/security/advisories/new) to create a private security advisory
 3. **Response Time**: We aim to acknowledge reports within 48 hours
 
 ### What to Include
@@ -129,7 +129,7 @@ The security pipeline (`.github/workflows/security-pipeline.yml`) includes:
 
 - **Primary Contact**: security@timothywarner.org
 - **Repository Owner**: [@timothywarner-org](https://github.com/timothywarner-org)
-- **Security Advisories**: [GitHub Security Advisories](../../security/advisories)
+- **Security Advisories**: [GitHub Security Advisories](https://github.com/timothywarner-org/github-security-testbed/security/advisories/new)
 
 ## Acknowledgments
 

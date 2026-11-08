@@ -23,7 +23,7 @@ Keep each beat to ~3–4 minutes. This is the capstone, so focus on narrative mo
 
 ---
 
-## Pre-Requisites (Before Recording)
+## Prerequisites (Before You Start)
 
 - Repo cloned and opened in VS Code.  
 - You’re logged into GitHub (`gh auth status`) and Azure (`az login`) in the integrated terminal.  
@@ -138,7 +138,7 @@ Use whatever you already had in Lesson 05 for:
   - a security incident (exposed SQL through bad firewall), or  
   - a failed change-management gate in CI/CD.
 
-Suggested light-weight flow on camera:
+Suggested flow:
 
 1. Show a failing check against `azure-sql-vulnerable.bicep`.  
 2. Use Copilot Chat in GitHub or VS Code to draft a **concise incident summary** that references:  
@@ -163,4 +163,4 @@ By the end of this lesson, you’ve shown that:
 3. **Compliance checks** can be re-used across clouds and IaC languages – same pattern, different resources.  
 4. **Security engineers and SREs** can use Copilot for faster remediation and better documentation, without giving up policy and pipeline controls.
 
-Use this file as your checklist during recording so you can stay in teaching mode instead of trying to recall every step.
+Use this file as your checklist so you can focus on the concepts instead of trying to recall every step.
